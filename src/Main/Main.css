@@ -45,8 +45,15 @@ button {
   transition: box-shadow .2s;
 }
 
-button:hover { box-shadow: 0 0 1rem hsl(150, 100%, 66%); }
-button:active { box-shadow: 0 0 2.5rem hsl(150, 100%, 66%); }
+button:enabled:hover { box-shadow: 0 0 1rem hsl(150, 100%, 66%); }
+button:enabled:active { box-shadow: 0 0 2.5rem hsl(150, 100%, 66%); }
+button:disabled { 
+  cursor: default;
+  box-shadow: none;
+}
+/* button:disabled:active, button:disabled:hover {
+  
+} */
 
 @media (min-width: 576px) {
   main {

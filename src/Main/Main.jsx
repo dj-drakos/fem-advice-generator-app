@@ -11,7 +11,7 @@ export default function Main() {
     const res = await fetch('https://api.adviceslip.com/advice')
     const {slip} = await res.json();
     setSlip(slip);
-    setLoading(false);
+    setTimeout(() => setLoading(false), 2000);
   }
 
   useEffect(() => {
