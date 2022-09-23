@@ -7,6 +7,7 @@ main {
   align-items: center;
   justify-items: center;
   width: 343px;
+  min-height: 313px;
   border-radius: 10px;
   background-color: hsl(217, 19%, 24%);
   text-align: center;
@@ -50,6 +51,7 @@ button:active { box-shadow: 0 0 2.5rem hsl(150, 100%, 66%); }
 @media (min-width: 576px) {
   main {
     width: 540px;
+    min-height: 330px;
     border-radius: 15px;
     padding: 48px;
     padding-bottom: 72px;
