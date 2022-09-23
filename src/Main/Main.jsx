@@ -21,8 +21,8 @@ export default function Main() {
 
   return (
     <main>
-        <h2>{!loading && `Advice #${slip.id}`}</h2>
-        <p>{loading ? 'Getting Advice...' : `${slip.advice}`}</p>
+        <h2>{loading ? 'Getting Advice...' : `Advice #${slip.id}`}</h2>
+        <p>{!loading &&`${slip.advice}`}</p>
   
       <svg className="divider" aria-hidden="true" width="295" height="16" xmlns="http://www.w3.org/2000/svg">
         <g fill="none" fillRule="evenodd">
