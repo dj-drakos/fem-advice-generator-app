@@ -26,7 +26,7 @@ main {
   border-radius: 10px;
   background-color: hsl(217, 19%, 24%);
   text-align: center;
-  padding: 28px;
+  padding: 24px;
   padding-top: 40px;
   padding-bottom: 64px;
   font-weight: 800;
@@ -44,15 +44,20 @@ p {
   font-size: 1.5rem;
 }
 
+.divider > g > g {
+  transform: translate(138px);
+}
+
 button {
+  height: 64px;
+  width: 64px;
   background-color: hsl(150, 100%, 66%);
   border: none;
   border-radius: 50%;
-  padding: 20px;
-  line-height: 0;
   position: absolute;
-  justify-self: center;
-  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   bottom: -32px;
 }
 
@@ -60,7 +65,7 @@ button {
   main {
     width: 540px;
     border-radius: 15px;
-    padding: 50px;
+    padding: 48px;
     padding-bottom: 72px;
     grid-gap: 30px;
   }
@@ -75,4 +80,17 @@ button {
   line-height: 2.36rem;
   padding-bottom: 8px;
   }
+
+  .divider {
+    width: 444px;
+  }
+
+  .divider > g > g {
+    transform: translate(212px);
+  }
+  
+  .divider > g > path {
+    d: path("M0 8h196v1H0zM248 8h196v1H248z");
+  }
+
 }
