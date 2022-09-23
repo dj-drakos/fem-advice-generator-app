@@ -1,9 +1,8 @@
-
 main {
   position: relative;
   display: grid;
   grid-template-rows: auto 1fr 16px;
-  grid-gap: 24px;
+  grid-gap: 1.5rem;
   align-items: start;
   justify-items: center;
   width: 343px;
@@ -11,10 +10,9 @@ main {
   border-radius: 10px;
   background-color: hsl(217, 19%, 24%);
   text-align: center;
-  padding: 24px;
-  padding-top: 40px;
-  padding-bottom: 64px;
+  padding: 2.5rem 1.5rem 4rem 1.5rem;
   font-weight: 800;
+  box-shadow:  2rem 2rem 2rem hsl(218, 23%, 15%);
 }
 
 h2 {
@@ -51,19 +49,15 @@ button:disabled {
   cursor: default;
   box-shadow: none;
 }
-/* button:disabled:active, button:disabled:hover {
-  
-} */
 
 @media (min-width: 576px) {
   main {
+    grid-template-rows: auto 1fr 1.5rem;
+    grid-gap: 1.75rem;
     width: 540px;
     min-height: 332px;
     border-radius: 15px;
-    padding: 48px;
-    padding-bottom: 64px;
-    grid-template-rows: auto 1fr 23px;
-    grid-gap: 28px;
+    padding: 3rem 3rem 4rem 3rem;
   }
 
   h2 {
