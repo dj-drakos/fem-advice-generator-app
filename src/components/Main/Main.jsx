@@ -23,7 +23,7 @@ export default function Main() {
     <main>
         <h1>{loading ? 'Getting Advice...' : `Advice #${slip.id}`}</h1>
         <p>{!loading &&`${slip.advice}`}</p>
-  
+
       <svg className="divider" aria-hidden="true" width="295" height="16" xmlns="http://www.w3.org/2000/svg">
         <g fill="none" fillRule="evenodd">
           <path fill="#4F5D74" d="M0 8h122v1H0zM173 8h122v1H173z"/>
@@ -33,7 +33,6 @@ export default function Main() {
           </g>
         </g>
       </svg>
-
       <button  disabled={loading && true} aria-label="generate new advice" onClick={() => fetchSlip()}> 
         <svg 
           role="img" 
