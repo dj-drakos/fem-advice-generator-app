@@ -15,7 +15,7 @@ main {
   box-shadow:  2rem 2rem 2rem hsl(218, 23%, 15%);
 }
 
-h2 {
+h1 {
   color: hsl(150, 100%, 66%);
   text-transform: uppercase;
   font-size: .666rem;
@@ -60,7 +60,7 @@ button:disabled {
     padding: 3rem 3rem 4rem 3rem;
   }
 
-  h2 {
+  h1 {
     font-size: .8rem;
     line-height: 1rem;
   }
@@ -72,5 +72,5 @@ button:disabled {
 
   .divider {  width: 444px; }
   .divider > g > g { transform: translate(212px); }
-  .divider > g > path { d: path("M0 8h196v1H0zM248 8h196v1H248z"); }
+  .divider > g > path { d: path("M0 8h196v1H0zM248 8h196v1h148z"); }
 }
