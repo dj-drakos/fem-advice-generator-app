@@ -1,9 +1,9 @@
-import './App.css';
+import './Main.css'
 
-function App() {
+export default function Main() {
+
   return (
-    <div className="App">
-      <main>
+    <main>
         <h2>Advice #117</h2>
         
         <p>"It is easy to sit up and take notice, what's difficult is getting up and taking action."</p>
@@ -29,12 +29,5 @@ function App() {
             </svg>
         </button>
       </main>
-      
-      <footer className="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>.  Coded by <a href="https://github.com/dj-drakos">DJ Drakos</a>.
-      </footer>
-    </div>
-  );
+  )
 }
-
-export default App;
