@@ -1,2 +1,91 @@
-.attribution { font-size: 11px; text-align: center; }
+.App {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  align-items: center;
+}
+
+main {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-gap: 24px;
+  align-items: center;
+  justify-items: center;
+  width: 343px;
+  border-radius: 10px;
+  background-color: hsl(217, 19%, 24%);
+  text-align: center;
+  padding: 24px;
+  padding-top: 40px;
+  padding-bottom: 64px;
+  font-weight: 800;
+}
+
+h2 {
+  color: hsl(150, 100%, 66%);
+  text-transform: uppercase;
+  font-size: .666rem;
+  letter-spacing: .25rem;
+}
+
+p {
+  color: hsl(193, 38%, 86%);
+  font-size: 1.5rem;
+}
+
+.divider > g > g { transform: translate(138px); }
+
+button {
+  height: 4rem;
+  width: 4rem;
+  background-color: hsl(150, 100%, 66%);
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -2rem;
+  transition: box-shadow .2s;
+}
+
+button:active {
+  box-shadow: 0 0 2.5rem hsl(150, 100%, 66%);
+}
+
+.attribution { font-size: .6875rem; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 576px) {
+  main {
+    width: 540px;
+    border-radius: 15px;
+    padding: 48px;
+    padding-bottom: 72px;
+    grid-gap: 30px;
+  }
+
+  h2 {
+    font-size: .8rem;
+    line-height: .8rem;
+  }
+
+  p {
+    font-size: 1.75rem;
+    line-height: 2.36rem;
+    padding-bottom: 8px;
+  }
+
+  .divider {
+    width: 444px;
+  }
+
+  .divider > g > g {
+    transform: translate(212px);
+  }
+  
+  .divider > g > path {
+    d: path("M0 8h196v1H0zM248 8h196v1H248z");
+  }
+}
+
