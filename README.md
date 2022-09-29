@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/dj-drakos/fem-advice-generator-app)
-- Live Site URL: [Netlify](https://voluble-parfait-a25eb4.netlify.app/)
+- Live Site URL: [Netlify](https://advice-dice.netlify.app/)
 
 ## My process
 
