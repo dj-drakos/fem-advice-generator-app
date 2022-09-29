@@ -1,73 +1,78 @@
 main {
-  position: relative;
   display: grid;
-  grid-template-rows: auto 1fr 16px;
-  grid-gap: 24px;
+  grid-template-rows: 14px minmax(135px, auto) 24px 32px;
+  gap: 24px;
   align-items: start;
   justify-items: center;
+  min-height: 314px;
   width: 343px;
-  min-height: 315px;
-  border-radius: 10px;
+  padding: 40px 24px 0 24px;
   background-color: hsl(217, 19%, 24%);
-  text-align: center;
-  padding: 40px 24px 64px 24px;
-  font-weight: 800;
+  border-radius: 10px;
   box-shadow:  2rem 2rem 2rem hsl(218, 23%, 15%);
+  font-weight: 800;
 }
 
 h1 {
   color: hsl(150, 100%, 66%);
-  text-transform: uppercase;
   font-size: .666rem;
+  line-height: 1.5;
   letter-spacing: .25rem;
+  text-transform: uppercase;
 }
 
 p {
   color: hsl(193, 38%, 86%);
-  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  text-align: center;
 }
 
 .divider > g > g { transform: translate(138px); }
 
 button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 64px;
   width: 64px;
   background-color: hsl(150, 100%, 66%);
   border: none;
   border-radius: 50%;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  bottom: -32px;
-  transition: box-shadow .2s;
+  margin-bottom: -32px;
+  transition: box-shadow .2s, background-color .3s;
 }
 
-button:enabled:hover { box-shadow: 0 0 1rem hsl(150, 100%, 66%); }
+button:enabled:hover, button:enabled:focus {
+  outline: none;
+  box-shadow: 0 0 1rem hsl(150, 100%, 66%);
+}
+
 button:enabled:active { box-shadow: 0 0 40px hsl(150, 100%, 66%); }
+
 button:disabled { 
+  background-color: hsl(217, 19%, 38%);
   cursor: default;
   box-shadow: none;
 }
 
 @media (min-width: 576px) {
   main {
-    grid-template-rows: auto 1fr 24px;
-    grid-gap: 28px;
+    grid-template-rows: 16px minmax(124px, auto) 32px 28px;
+    gap: 28px;
     width: 540px;
     min-height: 332px;
     border-radius: 15px;
-    padding: 48px 48px 64px 48px;
+    padding: 48px;
+    padding-bottom: 0;
   }
 
   h1 {
     font-size: .8rem;
-    line-height: 1rem;
   }
 
   p {
     font-size: 1.7rem;
-    line-height: 2.35rem;
   }
 
   .divider {  width: 444px; }

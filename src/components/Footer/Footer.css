@@ -1,3 +1,7 @@
+footer {
+  padding-bottom: 8px;
+}
+
 .attribution { 
   font-size: .6875rem; 
   text-align: center; 
@@ -10,5 +14,13 @@
   transition: text-shadow .3s;
 }
 
-.attribution a:hover { text-shadow: 0 0 1rem hsl(150, 100%, 66%); }
+.attribution a:hover { 
+  text-shadow: 0 0 1rem hsl(150, 100%, 66%); 
+}
+.attribution a:focus { 
+  outline: none;
+  text-decoration: underline;
+  text-shadow: 0 0 1rem hsl(150, 100%, 66%); 
+}
+
 .attribution a:active { text-shadow: 0 0 2rem hsl(150, 100%, 66%); }
