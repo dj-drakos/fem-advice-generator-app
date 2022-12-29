@@ -1,10 +1,10 @@
 {
-  "short_name": "Advice Generator",
-  "name": "Frontend Mentor | Advice Generator",
+  "short_name": "Advice Dice",
+  "name": "Advice Dice",
   "icons": [
     {
-      "src": "favicon-32x32.png",
-      "type": "image/png",
+      "src": "djd_icon.svg",
+      "type": "image/svg+xml",
       "sizes": "32x32"
     }
   ],
